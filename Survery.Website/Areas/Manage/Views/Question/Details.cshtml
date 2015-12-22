@@ -1,0 +1,42 @@
+﻿@model Survery.Website.Areas.Manage.Models.QuestionViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>QuestionViewModel</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SortId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SortId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurveryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurveryId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

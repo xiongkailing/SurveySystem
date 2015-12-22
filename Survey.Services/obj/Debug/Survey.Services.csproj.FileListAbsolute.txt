@@ -1,0 +1,14 @@
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\obj\Debug\Survey.Services.csprojResolveAssemblyReference.cache
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\Survey.Services.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\Survey.Services.pdb
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\MongoDB.Bson.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\MongoDB.Driver.Core.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\MongoDB.Driver.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\Survey.Data.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\Survey.Models.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\Survey.Data.pdb
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\Survey.Models.pdb
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\MongoDB.Bson.xml
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\bin\Debug\MongoDB.Driver.xml
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\obj\Debug\Survey.Services.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Services\obj\Debug\Survey.Services.pdb

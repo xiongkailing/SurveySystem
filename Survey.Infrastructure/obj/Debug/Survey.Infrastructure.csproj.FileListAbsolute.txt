@@ -1,0 +1,6 @@
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Infrastructure\bin\Debug\Survey.Infrastructure.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Infrastructure\bin\Debug\Survey.Infrastructure.pdb
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Infrastructure\bin\Debug\NLog.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Infrastructure\bin\Debug\NLog.xml
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Infrastructure\obj\Debug\Survey.Infrastructure.dll
+c:\users\开玲\documents\visual studio 2013\Projects\Survery.Website\Survey.Infrastructure\obj\Debug\Survey.Infrastructure.pdb
