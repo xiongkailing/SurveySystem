@@ -42,12 +42,28 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.FormName, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FormName)
+                @Html.ValidationMessageFor(model => model.FormName)
+            </div>
+        </div>
+
+        <div class="form-group">
             @Html.LabelFor(model => model.Selections, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input type="text" name="Selections[0]" value="@Model.Selections.ElementAt(0)"/>
-                <input type="text" name="Selections[1]" value="@Model.Selections.ElementAt(1)" />
-                <input type="text" name="Selections[2]" value="@Model.Selections.ElementAt(2)" />
-                <input type="text" name="Selections[3]" value="@Model.Selections.ElementAt(3)" />
+                <p>
+                    <input type="text" name="Selections[0].Value" value="@Model.Selections.ElementAt(0).Value" /><input type="text" name="Selections[0].Context" value="@Model.Selections.ElementAt(0).Context" />
+                </p>
+                <p>
+                    <input type="text" name="Selections[1].Value" value="@Model.Selections.ElementAt(1).Value" /><input type="text" name="Selections[1].Context" value="@Model.Selections.ElementAt(1).Context" />
+                </p>
+                <p>
+                    <input type="text" name="Selections[2].Value" value="@Model.Selections.ElementAt(2).Value" /><input type="text" name="Selections[2].Context" value="@Model.Selections.ElementAt(2).Context" />
+                </p>
+                <p>
+                    <input type="text" name="Selections[3].Value" value="@Model.Selections.ElementAt(3).Value" /><input type="text" name="Selections[3].Context" value="@Model.Selections.ElementAt(3).Context" />
+                </p>
                 <!--TODO:js 转成动态-->
             </div>
         </div>

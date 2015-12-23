@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Survery.Website.Areas.Manage.Models.QuestionViewModel>
+
+@{
+    ViewBag.Title = ViewData["SurveyName"];
+}
+
+<h4 style="text-align:center;color:red">@ViewData["SurveyName"]</h4>
+
+<div style="width:70%;margin-left:15%;margin-right:15%;">
+    @foreach (var item in Model)
+    {
+        <div class="question" style="margin:10px 0;">
+            <div class="title" style="margin:5px 0">
+                <span>#</span> <strong>@item.Description</strong>
+            </div>
+            <div class="selection">
+                @if (item.QuestionType == Survey.Models.QuestionType.SingleSelection)
+                {
+                    foreach (var selection in item.Selections)
+                    {
+                        <input type="radio" name="@item.FormName" value="@selection.Value" /> <label>@selection.Context</label>
+                    }
+                }
+                else if (item.QuestionType == Survey.Models.QuestionType.MultipleSelection)
+                {
+                    foreach (var selection in item.Selections)
+                    {
+                        <input type="checkbox" value="@selection.Value" name="@item.FormName" /> <label>@selection.Context</label>
+                    }
+                }
+                else
+                {
+                    <input type="text" name="@item.FormName" />
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@section scripts{
+    <!--[if IE]>
+    <script type="text/javascript">
+        $(function () {
+            console.log(document.body.clientHeight);
+            console.log(top.screen.availHeight);
+            if (window != top) {
+                var body = document.getElementsByTagName('body')[0];
+                body.style.zoom = 0.6;
+
+            }
+        });
+    </script>
+        <![endif]-->
+    <!--[if !IE]>-->
+    <script type="text/javascript">
+        $(function () {
+            if (window != top) {
+                var body = document.getElementsByTagName('body')[0];
+                body.style.transform = 'scale(0.6)';
+                var div = document.createElement("div");
+                div.style.width = '100%';
+                div.style.height = '100%';
+                div.style.zIndex = '100';
+                div.style.position = 'absolute';
+                div.style.top = "0";
+                div.style.left = "0";
+                div.style.opacity = "1";
+                body.appendChild(div);
+            }
+        });
+    </script>
+    <!--<![endif]-->
+}

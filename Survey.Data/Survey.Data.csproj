@@ -50,7 +50,6 @@
   <ItemGroup>
     <Compile Include="IRepository.cs" />
     <Compile Include="MongoBaseModel.cs" />
-    <Compile Include="MongoClientInstance.cs" />
     <Compile Include="MongoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -35,7 +35,11 @@ namespace Survery.Website.Areas.Manage.Models
         /// <summary>
         /// 选项
         /// </summary>
-        public IEnumerable<string> Selections { get; set; }
+        public IEnumerable<Selection> Selections { get; set; }
+        /// <summary>
+        /// 表单名称
+        /// </summary>
+        public string FormName { get; set; }
         public void MapFromEntity(Question entity)
         {
             this.Id = entity._id.ToString();
@@ -44,6 +48,7 @@ namespace Survery.Website.Areas.Manage.Models
             this.SurveryId = entity.SurveryId;
             this.Selections = entity.Selections;
             this.QuestionType = entity.QuestionType;
+            this.FormName = entity.FormName;
         }
         public Question MapToEntity()
         {
@@ -62,6 +67,7 @@ namespace Survery.Website.Areas.Manage.Models
             question.SurveryId = this.SurveryId;
             question.Selections = this.Selections;
             question.QuestionType = this.QuestionType;
+            question.FormName = this.FormName;
             return question;
         }
     }

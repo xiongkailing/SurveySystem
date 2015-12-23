@@ -29,7 +29,11 @@ namespace Survey.Models
         /// <summary>
         /// 选项
         /// </summary>
-        public IEnumerable<string> Selections { get; set; }
+        public IEnumerable<Selection> Selections { get; set; }
+        /// <summary>
+        /// 表单名称
+        /// </summary>
+        public string FormName { get; set; }
     }
 
     public enum QuestionType
@@ -46,5 +50,11 @@ namespace Survey.Models
         /// 问答形式
         /// </summary>
         QandA = 4
+    }
+
+    public class Selection
+    {
+        public string Context { get; set; }
+        public string Value { get; set; }
     }
 }
